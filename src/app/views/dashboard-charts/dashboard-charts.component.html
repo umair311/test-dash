@@ -1,0 +1,116 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" class="mt-4" style="padding-top: 45px;">
+
+    <div id="chart" fxFlex='48'>
+
+      <div>
+        <p>Success Vs Rejected</p>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start end" class="border-right">
+        <div fxFlex=35>
+          <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart"
+            [plotOptions]="chartOptions.plotOptions" [labels]="chartOptions.labels" [fill]="chartOptions.fill">
+          </apx-chart>
+        </div>
+        <div fxFlex=20 class="border-right">
+          <div class="legends">{{chartsData[0].valueA}}%</div>
+          <div style="margin-top: -10px;">
+            <div class="legend-box"></div>
+            <div fxFlex class="legend-label ml-2">Success</div>
+          </div>
+
+        </div>
+
+        <div fxFlex=20 class="ml-4">
+          <div class="legends">{{chartsData[0].valueB}}%</div>
+          <div style="margin-top: -10px;">
+            <div class="legend-box" style="background-color: #F47585;"></div>
+            <div fxFlex class="legend-label ml-2">Rejected</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="chart" fxFlex='45'>
+      <div>
+        <p>Payment Vs Refunds</p>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start end">
+        <div fxFlex=35>
+          <apx-chart [series]="chartOptionsB.series" [chart]="chartOptionsB.chart"
+            [plotOptions]="chartOptionsB.plotOptions" [labels]="chartOptionsB.labels" [fill]="chartOptionsB.fill">
+          </apx-chart>
+        </div>
+        <div fxFlex=20 class="border-right">
+          <div class="legends">{{chartsData[1].valueA}}%</div>
+          <div style="margin-top: -10px;">
+            <div class="legend-box" style="background-color: #0E7DB7;"></div>
+            <div fxFlex class="legend-label ml-2">Payment</div>
+          </div>
+
+        </div>
+
+        <div fxFlex=20 class="ml-4">
+          <div class="legends">{{chartsData[1].valueB}}%</div>
+          <div style="margin-top: -10px;">
+            <div class="legend-box" style="background-color: #FFB74A;"></div>
+            <div fxFlex class="legend-label ml-2">Refund</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="space-between center" class="header mt-5 header-2">
+    <div fxFlex='50'>
+      <h2>Graph Detail</h2>
+    </div>
+    <div fxFlex='12'>
+
+      <select class="form-control">
+        <option value="" disabled selected>Graph Type</option>
+        <option value="vendor">Today</option>
+        <option value="retailer">Tomorrow</option>
+
+      </select>
+
+    </div>
+    <div fxFlex='20'>
+      <select class="form-control">
+        <option value="" disabled selected>Graph Period - Unit Type</option>
+        <option value="vendor">Today</option>
+        <option value="retailer">Tomorrow</option>
+
+      </select>
+    </div>
+    <div fxFlex='16'>
+
+      <select (change)="changeChart($event)" class="form-control">
+        <option disabled selected>Graph View Style</option>
+        <option value="bar">Bar Chart</option>
+        <option value="line">Line Chart</option>
+
+      </select>
+    </div>
+    <div fxFlex="100">
+      <!-- <div id="lineChartA" style="display: block; height: 370px;"></div> -->
+      <div *ngIf="chartVal=='line'">
+        <apx-chart [series]="chartOptionsC.seriesA" [chart]="chartOptionsC.chartA" [xaxis]="chartOptionsC.xaxis"
+          [dataLabels]="chartOptionsC.dataLabels" [grid]="chartOptionsC.grid" [stroke]="chartOptionsC.stroke">
+        </apx-chart>
+      </div>
+
+      <div *ngIf="chartVal=='bar'">
+        <apx-chart [series]="chartOptionsD.seriesC" [chart]="chartOptionsD.chartC"
+          [dataLabels]="chartOptionsD.dataLabels" [plotOptions]="chartOptionsD.plotOptions"
+          [xaxis]="chartOptionsD.xaxis"></apx-chart>
+      </div>
+    </div>
+    <div fxFlex="50" class="detail">
+      <p>Graph Last Update - <a href="#">12 Minutes ago</a></p>
+    </div>
+    <div fxFlex="50" class="detail" fxLayoutAlign="end end">
+      <a style="color: #FF9900;font-size: 14px;" href="#">View all Payments from this Date Range</a>
+    </div>
+  </div>

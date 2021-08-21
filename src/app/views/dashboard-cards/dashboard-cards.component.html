@@ -1,0 +1,81 @@
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <ng-container *ngFor="let item of cardsData">
+    <div fxFlex='19'>
+      <mat-card>
+        <div class="m-1" class="des">
+          <p [style.color]="item.color">{{item.name}}</p>
+          <div>
+            <p class="para">
+              <mat-icon>description</mat-icon> <span>{{item.valueOne}}</span>
+            </p>
+            <p>
+              <mat-icon>description</mat-icon> <span>{{item.valueTwo}}</span>
+            </p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </ng-container>
+  
+    
+    <!-- <div fxFlex='19'>
+      <mat-card>
+        <div class="m-1" class="des">
+          <p style="color: #71DA86;">Successful</p>
+          <div>
+            <p class="para">
+              <mat-icon>description</mat-icon> <span>123456789</span>
+            </p>
+            <p>
+              <mat-icon>description</mat-icon> <span>123456789101</span>
+            </p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div fxFlex='19'>
+      <mat-card>
+        <div class="m-1" class="des">
+          <p style="color: #F47585;">Rejected</p>
+          <div>
+            <p class="para">
+              <mat-icon>description</mat-icon> <span>123456789</span>
+            </p>
+            <p>
+              <mat-icon>description</mat-icon> <span>123456789101</span>
+            </p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div fxFlex='19'>
+      <mat-card>
+        <div class="m-1" class="des">
+          <p style="color: #0E7DB7;">Payments</p>
+          <div>
+            <p class="para">
+              <mat-icon>description</mat-icon> <span>123456789</span>
+            </p>
+            <p>
+              <mat-icon>description</mat-icon> <span>123456789101</span>
+            </p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div fxFlex='19'>
+      <mat-card>
+        <div class="m-1" class="des">
+          <p style="color: #FFB74A;">Refund</p>
+          <div>
+            <p class="para">
+              <mat-icon>description</mat-icon> <span>123456789</span>
+            </p>
+            <p>
+              <mat-icon >description</mat-icon> <span>123456789101</span>
+            </p>
+          </div>
+        </div>
+      </mat-card>
+    </div> -->
+  </div>

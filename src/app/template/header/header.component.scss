@@ -1,0 +1,57 @@
+.main-header{
+    width: 100%;
+    background-color: #904EE8;
+    padding: 10px 0px;
+    line-height: 15px;
+   
+}
+.top-header{
+    width: 90%;
+    margin: 0 auto;
+    img{
+        width: 19px;
+        margin-right: 10px;
+    }
+    .top-text{
+        color: white;
+        font-size: 13px;
+        
+    }
+    .user-img{
+        width: 17px;
+    }
+
+}
+.main-container {
+    width: 100%;
+    padding: 5px 0px;
+}
+.bottom-header{
+    width: 90%;
+    margin: 0 auto;
+    .logo{
+        width: 200px;
+    }
+    ul li{
+        display: inline-block;
+        margin-left: 25px;
+        margin-top: 20px;
+        a{
+            color: #777575;
+            &.active,
+                &:hover{
+                color: #A797F6;
+            }
+        }
+    }
+    .dropdown-menu{
+        margin-top: 5.5%;
+
+        li{
+            display: block;
+        }
+    }
+.dropdown_image{
+    width: 12px;
+}
+}

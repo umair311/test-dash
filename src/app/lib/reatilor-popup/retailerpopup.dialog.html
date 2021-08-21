@@ -1,0 +1,174 @@
+
+<div style="min-width: 1200px; max-width: 1200; ">
+<div fxLayout="row" *ngIf="!series">
+<div fxFlex='50' class="mx-5 form-area">
+<div style="width: 70%;" class="text-left">
+    <h3>Tell Us About Your Stores</h3>
+    <p>personalizing your stores with your products/brands makes it easy to customize</p>
+
+</div>
+<div style="width: 80%;">
+    <form >
+        <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+           
+            <div fxFlex="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>Store/Branch Name</mat-label>
+                    <input matInput type="text"/>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>Zip Code</mat-label>
+                    <input matInput type="text" />
+                    
+                </mat-form-field>
+                
+
+            </div>
+
+            <div fxFlex="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>Country</mat-label>
+                    <mat-select>
+                        <mat-option value="vendor">Vendor</mat-option>
+                        <mat-option value="retailer">Retailer</mat-option>
+                     
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>State/Province</mat-label>
+                    <mat-select>
+                        <mat-option value="vendor">Vendor</mat-option>
+                        <mat-option value="retailer">Retailer</mat-option>
+                     
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>City</mat-label>
+                    <mat-select>
+                        <mat-option value="vendor">Vendor</mat-option>
+                        <mat-option value="retailer">Retailer</mat-option>
+                     
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100">
+                <mat-form-field appearance="outline">
+                    <mat-label>Company Street Address</mat-label>
+                    <input matInput type="text" />
+                    
+                </mat-form-field>
+                
+
+            </div>
+            <div fxFlex="30">
+                <button mat-raised-button class="button mt-5" (click)="save()">Save</button>
+            </div>
+            <div fxFlex="65">
+                <button mat-raised-button class="buttonA mt-5">Save & Continue Adding</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+</div>
+<div style="background-image: url('../../../assets/angular.jpg'); 
+ background-repeat: no-repeat;
+background-position:center;
+background-size: cover;
+transition: 0s;"
+
+fxFlex='50'>
+<!-- <div class="text-right mt-4 mr-4">
+    <button class="btn buttonC">Maybe Later</button>
+</div> -->
+</div>
+</div>
+
+<div *ngIf="series" >
+<div fxLayout="row" class="mx-5 mt-5" fxLayoutAlign="space-between center">
+<div fxFlex="73">
+<h1>Select Shipping Method You Would Like To Offer.</h1>
+<p>personalizing your Shipping methods as per your requirements.</p>
+</div>
+<div fxFlex="12">
+    <button mat-raised-button class="button" (click)="onCancelClick()">Save</button>
+</div>
+<div fxFlex="12">
+    <button mat-raised-button class="buttonA" (click)="onCancelClick()" style="background-color: #868686;">Maybe Later</button>
+</div>
+    </div>
+    <div class="data-table mt-4">
+        <table class="table table-hover">
+          <thead style="background-color: #F3F3F3; border: hidden;">
+            <tr>
+              <th>                               
+                   <section class="example-section">
+                <mat-checkbox [checked]=false></mat-checkbox>
+            </section>
+        </th>
+              <th>Estimeted Delivery</th>
+              <th>Cost</th>
+              <th>Tracking Service</th>
+              <th>Carrier</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>                   <section class="example-section">
+                <mat-checkbox [checked]=false></mat-checkbox>
+            </section></td>
+              <td>Estimeted Delivery Time 30-50 Days</td>
+              <td>Shipping US $0.06</td>
+              <td class="text-center"><img src="assets/Assets/assets/ic_cancelpx.png" alt=""></td>
+              <td>Cainio Super Economy Globle</td>
+
+            
+            </tr>
+            <tr>
+                <td>                   <section class="example-section">
+                  <mat-checkbox [checked]=false></mat-checkbox>
+              </section></td>
+                <td>Estimeted Delivery Time 30-50 Days</td>
+                <td>Shipping US $0.06</td>
+                <td class="text-center"><img src="assets/Assets/assets/ic_cancelpx.png" alt=""></td>
+                <td>Cainio Super Economy Globle</td>
+  
+              
+              </tr>
+              <tr>
+                <td>                   <section class="example-section">
+                  <mat-checkbox [checked]=false></mat-checkbox>
+              </section></td>
+                <td>Estimeted Delivery Time 30-50 Days</td>
+                <td>Shipping US $0.06</td>
+                <td class="text-center"><img src="assets/Assets/assets/ic_cancelpx.png" alt=""></td>
+                <td>Cainio Super Economy Globle</td>
+  
+              
+              </tr>
+              <tr>
+                <td>                   <section class="example-section">
+                  <mat-checkbox [checked]=false></mat-checkbox>
+              </section></td>
+                <td>Estimeted Delivery Time 30-50 Days</td>
+                <td>Shipping US $0.06</td>
+                <td class="text-center"><img src="assets/Assets/assets/ic_cancelpx.png" alt=""></td>
+                <td>Cainio Super Economy Globle</td>
+  
+              
+              </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+

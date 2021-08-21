@@ -1,0 +1,25 @@
+<div class="mt-4 mb-3 tabels">
+    <h2>Recent Transactions</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <td scope="col">Date and Time</td>
+          <td scope="col">Payment Method</td>
+          <td scope="col">Operations</td>
+          <td scope="col">Amounts ($)</td>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let item of tabelsData">
+          <td scope="row">{{item.date}}</td>
+          <td>
+            <div class="tabel-round mr-3" [style.background-color]="item.colorA"></div><span fxFlex>{{item.payment}}</span>
+          </td>
+          <td><span class="td-btn" [style.background-color]="item.colorB">{{item.operations}}</span></td>
+          <td>{{item.amounts}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,62 @@
+
+
+<div fxLayout="row" style="height: 100vh;">
+    <!-- sidenav -->
+    <div fxFlex='18' class="sidenav">
+
+
+     
+            <div class="mx-4 mt-4">
+                <img src="assets/6d18131b64a5a75b163eaadd685d42ba.png" alt="" class="image" >
+            </div>
+
+        
+
+        <!-- navbar links -->
+        <div class="links mt-3">
+            <ul>
+
+                <ng-container *ngFor="let menu of menus; let i = index">
+
+                    <ng-container>
+                        <li routerLinkActive="active" *ngIf="!menu.is_hidden" [class.opened]="menu.opened">
+                            <a [routerLink]="menu.routerLink">
+
+                                <span fxFlex>{{menu.label}}</span>
+
+                            </a>
+
+                        </li>
+                    </ng-container>
+                </ng-container>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div fxFlex='82' style="max-height: 100vh; overflow-y: auto;">
+        <div class="card mycard" >
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="mx-4">
+                <div fxFlex="50">
+                    <input id="search" [style.background-image]="'url(assets/Assets/assets/search-list@2x.png)'"
+                       type="text" class="form-control mt-2"
+                      placeholder="Search">
+                  </div>
+                  <div fxFlex="35" fxLayoutAlign="end end" class="feed">
+                      <a href="#">Feedback?</a>
+                  </div>
+                  <div fxFlex="15" fxLayoutAlign="end end">
+                    <img src="assets/6d18131b64a5a75b163eaadd685d42ba.png" alt="" style="width: 40px;">
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div style="padding-top: 74px;">
+            <!-- <router-outlet></router-outlet> -->
+            <app-dashboard></app-dashboard>
+        </div>
+    </div>
+</div>

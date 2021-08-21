@@ -1,0 +1,303 @@
+//for transition time
+div{
+  transition:  0.7s;
+}
+//for side nave
+.sidenav{
+opacity: 1;
+height: 100vh;
+background-color: #F7FAFC;
+
+
+}
+.image{
+  height: 38px;
+width: 141px;
+
+}
+//for sidenave header
+.nav-hed{
+  background-color: #5389DC;
+  h1{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 500;
+    
+    padding-top: 10px
+   
+    }
+
+}
+
+
+//for sidenav links
+.links{
+  li.active{
+    position: relative;
+    
+    a{
+      span{color: #212529;}
+      
+    }
+ 
+  
+   
+  }
+  // padding-top: 14px;
+  ul{
+    li{
+     
+      list-style: none;
+      // padding-top: 12px;
+      // padding-bottom: 7px;
+      // padding-bottom: 4px;
+    // padding-top: 7px;
+      margin-top: 0;
+      margin-bottom: 0;
+      cursor: pointer;
+      // padding: 10px 0;
+      
+
+      a{
+      //   display: block;
+        padding: 3px 0 3px 20px;
+        text-align: left;
+      //  font-family: sans-serif;
+      //  letter-spacing: 0px;
+      color: #212529;
+      //  opacity: 1;
+      //  font-size: 14px;
+       text-decoration: none;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+
+         }
+    }
+    li:hover{
+      position: relative;
+      a{
+        color: #005A7F;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+      }
+
+    
+
+    }
+
+
+}
+}
+//for sidenav after sidenave togle
+
+
+
+
+
+
+
+li.active{
+  position: relative;
+  a{
+    span{color: #005A7F;}
+    font-weight: 600;
+    
+  }
+
+ 
+ 
+}
+
+.mycard{
+  height: 75px;
+  text-align: right;
+  position: fixed;
+  z-index: 999999;
+  width: 82%;
+  height: 62px;
+a{
+  font-family: Calibri;
+  font-size: 17px;
+  font-style: normal;
+ color: #005A7F;
+
+ 
+}
+ 
+  
+}
+.mycard1{
+  height: 59px;
+  text-align: right;
+  position: fixed;
+  z-index: 999999;
+  width: 95%;
+  ul{
+ 
+    
+    li{
+      display: inline-block;
+      list-style: none;
+    
+      p{
+        font-family: sans-serif;
+        font-weight: 600;
+       
+      }
+    }
+  }
+ 
+}
+.user{
+  width: 52px;
+  padding-top: 3px;
+  border-radius: 50px;
+}
+.notification{
+  width: 28px;
+  padding-bottom: 10px;
+}
+.chat{
+  width: 24px;
+  padding-bottom: 2px;
+}
+
+.side-menu-icon{
+  // background-image: url('../../../assets/chat-comb.png');
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: 0px 0;
+  margin-right: 17px;
+  transition: 0s;
+
+}
+
+:host ::ng-deep.cdk-overlay-container {
+  position: fixed;
+  z-index: 999999999;
+  margin-top: 26px;
+  margin-left: 3%;
+}
+// li.sub-nav {
+//   .nav-dropdown-trigger {
+
+//     .onHover {
+//       display: none;
+//     }
+//     .onNotHover {
+//       display: block;
+//     }
+//     &:hover {
+//       .onHover {
+//         display: block;
+//       }
+//       .onNotHover {
+//         display: none;
+//       }
+//       &:after {
+//         color: white;
+//       }
+//     }
+//   }
+//   // .nav-dropdown {
+//   //   display: none;
+//   //   padding-left: 0;
+//   //   padding-right: 0 !important;
+//   // }
+ 
+// }
+// li.sub-nav.opened {
+//   .nav-dropdown-trigger {
+
+//     color: white;
+//     background: #2D85C0;
+//   }
+//   .side-menu-icon {
+//     background-position: 0 !important;
+//   }
+//   .nav-dropdown {
+//     display: block;
+//     margin-top: 2px;
+//     li {
+//       a {
+//         color: #2D85C0 !important;
+//         background: #f8f8f8 !important;
+//         width: 80% !important;
+
+//         &:hover {
+//           background: #2D85C0 !important;
+//           color: white !important;
+//           text-decoration: none;
+//         }
+//       }
+//     }
+//     li.active {
+//       a {
+//         color: white !important;
+//         background: #2D85C0 !important;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+
+
+.links{
+  .underNav{
+    li{
+      padding: 10px 0;
+    }
+    a{
+      margin-left: 0px;
+    }
+    span{
+      margin-left: 0px;
+    }
+  }
+
+}
+#search{
+  width: 100%;
+  // font-size: 12px;
+  background-repeat: no-repeat;
+  padding: 19px 9px 17px 26px;
+  background-position: 0px 12px;
+  background-size: 17px;
+  letter-spacing: 0;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  border: none;
+  font-size: 20px;
+  font-family: Calibri;
+ 
+}
+
+
+.form-control:focus {
+  border-color: white;
+
+}
+.feed{
+  a{
+    font-family: Calibri;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+}
+
